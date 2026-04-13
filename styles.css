@@ -4,8 +4,8 @@
 /* Polices : Playfair Display (titres), DM Sans (texte) */
 /* Exemple : font-family: 'Playfair Display', serif; */
 /* Exemple : font-family: 'DM Sans', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 /*
  * Points de rupture :
  * ==========================================================================
@@ -18,5 +18,37 @@
  * @author Charles Piquette <2535791@csfoy.ca>
  *
  * TABLE DES MATIERES
- *
+ * Accessibilité
+ * 
  */
+
+ /* ------- Accessibilité ------- */
+.screen-reader-only,
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus,
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+:root {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
