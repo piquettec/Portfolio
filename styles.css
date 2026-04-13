@@ -6,21 +6,12 @@
 /* Exemple : font-family: 'DM Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
-/* Charte typographique
-   ========================================================================== */
-/**
- * Typographie responsive (Mobile First)
-   ========================================================================
- * Les valeurs de taille de police suggérées ici sont à titre indicatif.
- * À ajuster selon la direction visuelle et le choix de polices de caractères.
- *
+/*
  * Points de rupture :
  * ==========================================================================
  * 640px  (40rem)  - Téléphones en mode paysage (horizontal)
  * 768px  (48rem)  - Tablettes en mode portrait (vertical)
  * 1024px (64rem)  - Petits ordinateurs portables, tablette en mode paysage (horizontal)
- * 1280px (80rem)  - Écrans de portables et écrans de bureau
- * 1536px (96rem)  - Écrans de bureau - souvent écrans de 24 pouces ou plus
  */
 
 /**
