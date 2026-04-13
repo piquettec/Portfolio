@@ -50,5 +50,10 @@
 :root {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-style: normal;
+}
+
+.titre__header,
+.conteneur__titre {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
 }
