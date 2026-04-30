@@ -18,11 +18,34 @@
  * @author Charles Piquette <2535791@csfoy.ca>
  *
  * TABLE DES MATIERES
+ * Styles de base
  * Accessibilité
+ * Styles typographique
  * 
  */
 
- /* ------- Accessibilité ------- */
+/* ------- Styles de base ------- */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ------- Accessibilité ------- */
 .screen-reader-only,
 .visually-hidden {
     border: 0;
@@ -47,13 +70,32 @@
     width: auto;
 }
 
+/* ------- Styles typographique ------- */
 :root {
     font-family: "Lato", sans-serif;
     font-weight: 400;
+
+    --couleur-header: #2E1333;
+    --couleur-utilitaire: #E980FC;
+    --couleur-tertiaire: #B96AC9;
 }
 
 .titre__header,
 .conteneur__titre {
     font-family: "Bungee", sans-serif;
     font-weight: 400;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--couleur-header);
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+.titre__nom {
+    color: var(--couleur-utilitaire);
 }
