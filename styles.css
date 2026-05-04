@@ -42,9 +42,9 @@ html {
     box-sizing: border-box;
 }
 
-img {
+/* img {
     max-width: 100%;
-}
+} */
 
 /* ------- Accessibilité ------- */
 .screen-reader-only,
@@ -117,7 +117,7 @@ header {
 .conteneur {
     display: flex;
     flex-direction: column;
-    margin: 20px 1em 0 1em;
+    margin: 20px 34em 0 34em;
     background: var(--couleur-conteneur);
     padding: 2rem;
     border-radius: 20px;
@@ -127,6 +127,11 @@ header {
 .conteneur__resumer {
     color: var(--couleur-header);
     font-weight: 700;
+}
+
+.conteneur__image {
+    width: auto;
+    height: auto;
 }
 
 .btn__plus-info {
