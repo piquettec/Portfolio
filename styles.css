@@ -113,13 +113,27 @@ header {
     color: var(--couleur-utilitaire);
 }
 
+.programme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.separateur {
+    width: 5px; 
+    height: 5px; 
+    background-color: var(--couleur-conteneur);
+    border-radius: 50%;
+    margin: 5px;
+}
+
 /* ------- Contenu ------- */
 .conteneur {
     display: flex;
     flex-direction: column;
     margin: 20px 34em 0 34em;
     background: var(--couleur-conteneur);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 1px;
 }
@@ -132,6 +146,7 @@ header {
 .conteneur__image {
     width: auto;
     height: auto;
+    border-radius: 20px;
 }
 
 .btn__plus-info {
