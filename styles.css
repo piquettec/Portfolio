@@ -4,8 +4,8 @@
 /* Polices : Playfair Display (titres), DM Sans (texte) */
 /* Exemple : font-family: 'Playfair Display', serif; */
 /* Exemple : font-family: 'DM Sans', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 /*
  * Points de rupture :
  * ==========================================================================
@@ -21,6 +21,7 @@
  * Styles de base
  * Accessibilité
  * Styles typographique
+ * Header
  * 
  */
 
@@ -70,16 +71,24 @@ img {
     width: auto;
 }
 
-/* ------- Styles typographique ------- */
+/* ------- Styles typographique et couleur ------- */
 :root {
     font-family: "Lato", sans-serif;
     font-weight: 400;
 
-    --couleur-header: #2E1333;
-    --couleur-utilitaire: #E980FC;
-    --couleur-tertiaire: #B96AC9;
+    --couleur-header: #2e1333;
+    --couleur-utilitaire: #e980fc;
+    --couleur-tertiaire: #f2b1ff;
+    --couleur-conteneur: white;
 }
 
+body {
+    background: #f5f1ed;
+    padding: 0;
+    margin: 0;
+}
+
+/* ------- Header ------- */
 .titre__header,
 .conteneur__titre {
     font-family: "Bungee", sans-serif;
@@ -89,13 +98,49 @@ img {
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     background-color: var(--couleur-header);
     width: auto;
     height: auto;
-    color: white;
+    color: var(--couleur-conteneur);
+}
+
+.texte__header {
+    margin: 2em auto 2em;
 }
 
 .titre__nom {
     color: var(--couleur-utilitaire);
+}
+
+/* ------- Contenu ------- */
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 1em 0 1em;
+    background: var(--couleur-conteneur);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px;
+}
+
+.conteneur__resumer {
+    color: var(--couleur-header);
+    font-weight: 700;
+}
+
+.btn__plus-info {
+    padding: 1rem;
+    border-radius: 20px;
+    border-color: var(--couleur-header);
+    background-color: var(--couleur-tertiaire);
+    color: var(--couleur-header);
+    font-weight: 700;
+}
+
+/* ------- Footer ------- */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
