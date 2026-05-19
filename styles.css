@@ -181,12 +181,14 @@ header {
     color: var(--couleur-texte);
     font-weight: 700;
     margin-bottom: 20px;
+    text-transform: uppercase
 }
 
 .conteneur__titre {
     letter-spacing: 1px;
     color: var(--couleur-header);
     margin-bottom: 30px;
+    text-transform: uppercase
 }
 
 .conteneur__image {
@@ -245,6 +247,7 @@ dialog::backdrop {
 .apprentissages_vrac {
     margin-bottom: 10px;
     font-weight: 600;
+    text-transform: uppercase
 }
 
 .apprentissages {
