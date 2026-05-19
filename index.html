@@ -43,16 +43,31 @@
                 <dialog id="fiche-projet">
                     <p class="type">DETAILS DU PROJET</p>
                     <h2 class="conteneur__titre">TP0 - CONFIGURATION DE L'ENVIRONNEMENT</h2>
-                    <div>
-                        <p class="semaine_rendu">SEMAINE 1</p>
-                        <p class="type">Exercice</p>
+                    <div class="vrac__semaine">
+                        <p class="semaine_rendu">Semaine 1</p>
+                        <p class="vrac">Exercice</p>
                     </div>
                     <p class="conteneur__texte">Mise en place de l'environnement de travail et verification des outils developpemenet du cours.</p>
-                    <p class="apprentissages_vrac"></p>
+                    <p class="apprentissages_vrac">APPRENTISSAGES EN VRAC :</p>
                     <div class="apprentissages">
-                        <p class="type">live server</p>
-                        <p class="type">validateur HTML/CSS</p>
-                        <p class="type">organisation des dossiers</p>
+                        <p class="vrac">live server</p>
+                        <p class="vrac">validateur HTML/CSS</p>
+                        <p class="vrac">organisation des dossiers</p>
+                    </div>
+
+                    <p class="conteneur__texte">Objectif: partir sur une base technique stable. Travaux: installation des extensions utiles, tests de previsualisation locale, verification des pratiques de nommage.</p>
+
+                    <div class="boite boite__orange">
+                        <h2 class="titre__boite titre__orange">Ce qui était difficile</h2>
+                        <p class="conteneur__texte">
+                            choisir des noms d'utilitaires cohérents sans rendre le CSS trop verbeux.
+                        </p>
+                    </div>
+                    <div class="boite boite__verte">
+                        <h2 class="titre__boite titre__vert">Ce dont je suis fier</h2>
+                        <p class="conteneur__texte">
+                            la réduction nette du nombre de déclarations dupliquées dans plusieurs composants.
+                        </p>
                     </div>
                     <button class="btn__conteneur" commandfor="fiche-projet" command="close">Fermer</button>
                 </dialog>
@@ -182,7 +197,7 @@
     </main>
     <footer>
         <p>Charles Piquette</p>
-        <p>Integration 2 <span class="separateur">•</span> Session d'hiver 2026</p>
+        <p>Integration 2 <span class="separateur separateur__footer">•</span> Session d'hiver 2026</p>
         <p>Cegep de Sainte-Foy</p>
     </footer>
 </body>

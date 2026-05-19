@@ -6,6 +6,7 @@
 /* Exemple : font-family: 'DM Sans', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 /*
  * Points de rupture :
  * ==========================================================================
@@ -81,7 +82,7 @@ html {
 :root {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    
+
     --couleur-conteneur: white;
     --couleur-header: #2e1333;
     --couleur-utilitaire: #e980fc;
@@ -92,6 +93,10 @@ html {
 
 body {
     background: #f5f1ed;
+}
+
+h2 {
+    font-family: "Madimi One", sans-serif;
 }
 
 /* ------- Header ------- */
@@ -109,19 +114,21 @@ header {
 }
 
 .texte__header {
-    width: 50rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 51rem;
     margin: auto;
 }
 
 .titre__header {
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: var(--couleur-conteneur);
     letter-spacing: 2px;
 }
 
 .sous-titre__header {
     color: var(--couleur-sous-titre);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
@@ -156,7 +163,7 @@ header {
     position: relative;
     background: var(--couleur-conteneur);
     border: 2px solid var(--couleur-tertiaire);
-    width: 50rem;
+    width: 51rem;
     border-radius: 20px;
     padding: 1.5rem;
     margin-bottom: 50px;
@@ -177,35 +184,107 @@ header {
 .conteneur__titre {
     letter-spacing: 1px;
     color: var(--couleur-header);
+    margin-bottom: 30px;
 }
 
 .conteneur__image {
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
+    display: block;
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.conteneur__texte {
+    margin-bottom: 30px;
 }
 
 .btn__conteneur {
-    padding: 0.7rem;
+    padding: 0.7em;
     border-radius: 10px;
     border-color: var(--couleur-header);
     background-color: var(--couleur-tertiaire);
     color: var(--couleur-header);
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* ------- Popups ------- */
 
 dialog {
-    width: min(28rem, 92vw);
+    width: 40rem;
     border: 1px solid #cbd5e1;
     border-radius: 0.75rem;
     padding: 1rem;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background: rgb(15 23 42 / 65%);
+}
+
+.vrac__semaine {
+    display: inline-flex;
+    gap: .5rem;
+}
+
+.semaine_rendu {
+    font-weight: 600;
+}
+
+.apprentissages_vrac {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.apprentissages {
+    display: flex;
+    flex-direction: row;
+    gap: .7rem;
+    border-bottom: 1px solid #2e1333;
+    margin-bottom: 20px;
+}
+
+.vrac {
+    display: inline-block;
+    border: 2px solid var(--couleur-tertiaire);
+    border-radius: 50px;
+    padding: 4px 12px;
+    color: var(--couleur-texte);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: .7rem;
+}
+
+.boite {
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-left: 5px solid;
+}
+
+.boite__orange {
+    background:#f8eee6;
+    border-color:#d97706;
+}
+
+.titre__orange {
+    color:#9a4f00;
+}
+
+.boite__verte{
+    background:#e8f5ec;
+    border-color:#16a34a;
+}
+
+.titre__vert {
+    color:#166534;
 }
 
 /* ------- Footer ------- */
 .separateur__footer {
-    background-color: var(--couleur-header);
+    color: var(--couleur-texte);
 }
 
 footer {
@@ -213,4 +292,6 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    width: 50rem;
+    margin: auto;
 }
