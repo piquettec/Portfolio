@@ -26,7 +26,6 @@
             </p>
         </section>
 
-        <section class="timeline">
             <article class="carte">
                 <div class="type">Exercice</div>
                 <img class="conteneur__image" src="screenshot_travaux/TP0.png" alt="Image du TP0 sur la configuration de l'environnement">
@@ -73,7 +72,6 @@
                 </dialog>
 
             </article>
-        </section>
 
         <section class="carte">
             <p class="type">tp</p>
@@ -83,11 +81,11 @@
                 Structuration du contenu avec les bonnes balises HTML5, 
                 hierarchie des titres coherente et validation du code.
             </p>
-                <button name="btnPlusInfo" value="plus" class="btn__conteneur">
+                <button name="btnPlusInfo" value="plus" class="btn__conteneur" commandfor="TP1" command="show-modal">
                     +Plus D'infos
                 </button>
 
-                <dialog id="fiche-projet">
+                <dialog id="TP1">
                     <p class="type">details du projet</p>
                     <h2 class="conteneur__titre">tp1 - balisage html semantique</h2>
                     <div class="vrac__semaine">
@@ -105,27 +103,27 @@
                         <p class="vrac">organisation des dossiers</p>
                     </div>
 
-                    <p class="conteneur__texte">Objectif: partir sur une base technique stable. Travaux: installation des extensions utiles, tests de previsualisation locale, verification des pratiques de nommage.</p>
+                    <p class="conteneur__texte">Objectif: Ce travail pratique amène à intégrer une page Web complète selon l'approche de l'amélioration progressive : on procède par étapes en s'assurant d'abord que les contenus sont accessibles grâce à un balisage HTML structurel et sémantique, puis on ajoute les balises nécessaires à la mise en page, avant d'introduire les styles CSS. </p>
 
                     <div class="boite boite__orange">
                         <h2 class="titre__boite titre__orange">Ce qui était difficile</h2>
                         <p class="conteneur__texte">
-                            choisir des noms d'utilitaires cohérents sans rendre le CSS trop verbeux.
+                            Le nommage des classe css pour que cela sois logique et compréhensible dans le css
                         </p>
                     </div>
                     <div class="boite boite__verte">
                         <h2 class="titre__boite titre__vert">Ce dont je suis fier</h2>
                         <p class="conteneur__texte">
-                            la réduction nette du nombre de déclarations dupliquées dans plusieurs composants.
+                            
                         </p>
                     </div>
-                    <button class="btn__conteneur" commandfor="fiche-projet" command="close">Fermer</button>
+                    <button class="btn__conteneur" commandfor="TP1" command="close">Fermer</button>
                 </dialog>
         </section>
 
         <section class="carte">
             <p class="type">Kata</p>
-            <img class="conteneur__image" src="volleyball_aesthetic.jpg" alt="Image du Katas Selecteurs CSS">
+            <img class="conteneur__image" src="screenshot_travaux/kata_selecteur.png" alt="Image du Katas Selecteurs CSS">
             <h2 class="conteneur__titre"> katas de selecteurs css</h2>
             <p class="conteneur__texte">
                 Exercices de specificite, cascade et nomenclature 
@@ -138,7 +136,7 @@
 
         <section class="carte">
             <p class="type">Kata</p>
-            <img class="conteneur__image" src="volleyball_aesthetic.jpg" alt="Image du Kata de Flexbox">
+            <img class="conteneur__image" src="screenshot_travaux/kata_grille.png" alt="Image du Kata de Flexbox">
             <h2 class="conteneur__titre">katas flexbox et grille en flexbox</h2>
             <p class="conteneur__texte">
                 Pratique de flex-direction, alignements et repartition 
@@ -177,7 +175,7 @@
 
         <section class="carte">
             <p class="type">Kata</p>
-            <img class="conteneur__image" src="volleyball_aesthetic.jpg" alt="Image du Katas d'Accessibilite">
+            <img class="conteneur__image" src="screenshot_travaux/kata_wcag.png" alt="Image du Katas d'Accessibilite">
             <h2 class="conteneur__titre">katas d'accessibilite wcag</h2>
             <p class="conteneur__texte">
                 Correction de pages selon les criteres ally: 
@@ -203,7 +201,7 @@
 
         <section class="carte">
             <p class="type">Projet</p>
-            <img class="conteneur__image" src="volleyball_aesthetic.jpg" alt="Image du projet de l'Entretien Sommatif">
+            <img class="conteneur__image" src="screenshot_travaux/portfolio.png" alt="Image du projet de l'Entretien Sommatif">
             <h2 class="conteneur__titre">entretien sommatif</h2>
             <p class="conteneur__texte">
                 Presentation finale du parcours, justification des choix techniques 
