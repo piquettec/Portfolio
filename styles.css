@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Importation de polices Google Fonts */
 /* Polices : Playfair Display (titres), DM Sans (texte) */
 /* Exemple : font-family: 'Playfair Display', serif; */
@@ -7,6 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@view-transition {
+    navigation: auto;
+}
 /*
  * Points de rupture :
  * ==========================================================================
@@ -201,6 +203,7 @@ header {
 }
 
 .btn__conteneur {
+    view-transition-name: bouton-projet;
     padding: 0.7em;
     border-radius: 10px;
     border-color: var(--couleur-header);
@@ -208,6 +211,11 @@ header {
     color: var(--couleur-header);
     font-weight: 700;
     cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.btn__conteneur:hover{
+    transform: scale(1.05);
 }
 
 /* ------- Popups ------- */
@@ -222,6 +230,7 @@ dialog {
 
 dialog::backdrop {
     background: rgb(15 23 42 / 65%);
+    backdrop-filter: blur(6px);
 }
 
 .vrac__semaine {
@@ -276,6 +285,7 @@ dialog::backdrop {
 .boite__verte{
     background:#e8f5ec;
     border-color:#16a34a;
+    margin-bottom: 20px;
 }
 
 .titre__vert {
